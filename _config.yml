@@ -1,0 +1,8 @@
+title: www.rollc.at
+description: rollcat's website.
+baseurl: ""
+url: ""
+
+theme: minima
+plugins:
+- jekyll-feed
