@@ -2,7 +2,11 @@ title: www.rollc.at
 description: rollcat's website.
 baseurl: ""
 url: ""
+timezone: CET
 
-theme: minima
+exclude:
+- readme.md
+
 plugins:
 - jekyll-feed
+- jekyll-seo-tag

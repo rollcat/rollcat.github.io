@@ -1,0 +1,34 @@
+<div id="meta">
+    <hr />
+    {% if page.date or page.author %}
+    <div class="post-meta">
+        Published
+        {% if page.author %}
+        by
+        <span itemprop="author"
+              itemscope
+              itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">
+                {{ page.author }}
+            </span>
+        </span>
+        {% endif %}
+        {% if page.date %}
+        on
+        <time class="dt-published"
+              datetime="{{ page.date | date_to_xmlschema }}"
+              itemprop="datePublished">
+            {{ page.date | date: "%Y-%m-%d" }}
+        </time>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    {%- if site.rss -%}
+    <a href="{{ 'feed.xml' | relative_url }}">
+        News feed!
+    </a>
+    {%- endif -%}
+
+    Go <a href="/">home</a>.
+</div>
