@@ -4,6 +4,9 @@ baseurl: ""
 url: ""
 timezone: CET
 
+feed:
+  path: rss.xml
+
 exclude:
 - readme.md
 
