@@ -7,11 +7,8 @@ body {
 .post-list li {
     list-style-type: none;
 }
-summary {
-    list-style: none;
-}
-details > summary::-webkit-details-marker {
-    display: none;
+details {
+    margin-left: 2em;
 }
 .small {
     font-size: small;
