@@ -1,7 +1,7 @@
 title: www.rollc.at
 description: rollcat's website.
 baseurl: ""
-url: ""
+url: https://www.rollc.at
 timezone: CET
 
 feed:
